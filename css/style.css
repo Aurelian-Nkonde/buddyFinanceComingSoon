@@ -1,0 +1,86 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 16px;
+}
+
+.title{
+    font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+    margin-top: 30px;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #597fbc;
+}
+
+.logo {
+    width: 12rem;
+   text-align: center;
+}
+
+.btnLogo{
+    height: 30px;
+}
+
+.paragraphy{
+    font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+    font-size: 1.1rem;
+}
+
+.countDown{
+    font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btns{
+    padding-top: 20px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    background-color: #597fbc;
+    max-width: 250px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 5px 8px;
+    border: 0px;
+    border-radius: 4px;
+    font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 10rem;
+    }
+
+    .main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        font-size: 2.8rem;
+    }
+}

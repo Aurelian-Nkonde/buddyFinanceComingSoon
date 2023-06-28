@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Buddy Finance</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://use.typekit.net/xyf5jzc.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/buddy-logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/buddy-logo.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/buddy-logo.svg">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="outerContainer">
+            <div class="imgs">
+                <img class="logo" src="assets/images/buddy-logo.svg" alt="AltBlack Logo">
+            </div>
+            <h1 class="title">Buddy Finance</h1>
+            <div class="">
+                <p class="paragraphy">We are Launching our exciting new version on the 31st July 2023</p>
+                <p class="countDown" id="count"></p>
+                <p class="paragraphy">To get service today, click the button below. Just start the chat with <strong>Hi</strong></p>
+            </div>
+            <div class="btns">
+                <button class="btn" onclick="location.href='https://api.whatsapp.com/send?phone=27678163030'">
+                    <img class="btnLogo" src="assets/images/whatsapp.svg" alt="join">
+                    <p class="btnText">| Send whatsapp</p>
+                </button>
+                <!-- <p>href="https://form.typeform.com/to/FvSsQZrz"</p> -->
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+        var countDownDate = new Date("Jul 31, 2023 15:37:25").getTime();
+
+        var x = setInterval(function() {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("count").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+</script>
+
+</html>
